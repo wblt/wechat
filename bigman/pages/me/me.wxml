@@ -1,0 +1,7 @@
+<view class = "container2">
+    <view class = "panel">
+        <label class = "title">请输入查询的内容</label>
+        <input class = "inputarea" bindinput="onInput" />
+        <button bindtap="onRequest" type="primary" class = "searBtn">查询</button>
+    </view>
+</view>
