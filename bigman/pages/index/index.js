@@ -1,26 +1,65 @@
 //index.js
 //获取应用实例
+var util = require('../../utils/util.js')
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {}
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+    //高中部数据
+    array1: [{
+      title:'计算机应用',
+      message: '12'
+    }, {
+      title:'电子商务',
+      message: '13'
+    },{
+      title:'电算化会计',
+      message: '13'
+    },{
+      title:'商务英语',
+      message: '13'
+    },{
+      title:'文秘',
+      message: '13'
+    },{
+      title:'电子电器',
+      message: '13'
+    },{
+      title:'数控模具',
+      message: '13'
+    },{
+      title:'旅游和酒店管理',
+      message: '13'
+    }],
+    //就业部数据
+    array2:[{
+      title:'计算机应用',
+      message: '12'
+    }, {
+      title:'电子商务',
+      message: '13'
+    },{
+      title:'电算化会计',
+      message: '13'
+    },{
+      title:'汽车制造与维修',
+      message: '13'
+    },{
+      title:'文秘（幼师方向）',
+      message: '13'
+    },{
+      title:'电子电器',
+      message: '13'
+    },{
+      title:'数控模具',
+      message: '13'
+    },{
+      title:'旅游和酒店管理',
+      message: '13'
+    }]
   },
   onLoad: function () {
-    console.log('onLoad')
-    var that = this
-    //调用应用实例的方法获取全局数据
-    app.getUserInfo(function(userInfo){
-      //更新数据
-      that.setData({
-        userInfo:userInfo
-      })
-    })
+    //视图加载完成
+
+
   }
 })

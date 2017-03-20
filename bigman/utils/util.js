@@ -16,6 +16,19 @@ function formatNumber(n) {
   return n[1] ? n : '0' + n
 }
 
+function getScreenInfo(){  
+  var imageSize = {}; 
+  wx.getSystemInfo({
+    success: function(res) {
+      imageSize.windowWith = res.windowWidth;
+      imageSize.windowHeight = res.windowHeight;
+    }
+  })
+  return imageSize;
+}
+
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  getScreenInfo: getScreenInfo
 }

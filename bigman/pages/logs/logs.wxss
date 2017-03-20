@@ -1,8 +1,139 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+
+page{
+    height: 100%;
 }
-.log-item {
-  margin: 10rpx;
+
+.page{
+    height: 100%;
 }
+
+/*学生基本信息布局*/
+.contentView1{
+    margin-top: 30px;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    justify-content: center;
+}
+
+/*专业*/
+.contentView2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/*选择的专业*/
+.contentView3{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/*确定*/
+.contentView4{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/*提示语*/
+.contentView5{
+    color: red;
+    font-size: 14px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/*名字区域*/
+.name_content{
+    align-items: center;
+    display: flex;
+}
+
+/*性别区域*/
+.sex_content{
+    align-items: center;
+    margin-left: 10px;
+    display: flex;
+}
+
+/*是否寄宿区域*/
+.boarding_content{
+    align-items: center;
+    margin-left: 10px;
+    display: flex;
+}
+
+/*学号区域*/
+.studentID_content{
+    align-items: center;
+    margin-left: 10px;
+    display: flex;
+}
+
+/*小图标*/
+.icon{
+    display: inline-block;
+    border: 4px solid transparent;
+    border-top: 4px solid #9b9b9b;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*寄宿选择盒子*/
+.boarding_item_box{
+    display: flex; 
+    margin-left: 5px;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    align-items:center;
+    justify-content:center;
+}
+
+/*框框里面标题*/
+.boarding_item_title{
+    margin-left: 5px;
+}
+
+
+.name_content{
+    margin-left: 5px;
+}
+
+/*学号内容*/
+.studentID_number{
+    margin-left: 5px;
+}
+
+/*录取专业*/
+.professionalAdmission{
+    justify-content: center;
+}
+
+/*选择的高中部专业*/
+.selectHighSchool{
+    align-items:center;
+    justify-content:center;
+    display: flex;
+}
+
+/*选择的就业部专业*/
+.selectmajor{
+    margin-left: 20px;
+    align-items:center;
+    justify-content:center;
+    display: flex;
+}
+
+
+
+
+

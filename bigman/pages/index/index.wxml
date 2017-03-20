@@ -1,10 +1,53 @@
 <!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+
+<!--总视图布局-->
+<view>
+
+    <!--高中部和就业部视图布局-->
+    <view class="flex-wrp" style="flex-direction:row">
+
+        <!--左边视图布局-->
+        <view class="flex-item1 bc_green" >
+
+            <!--高中部-->
+            <view class="title_HighSchool">高中部</view>
+
+            <!--高中列表布局视图-->
+            <view>
+                <block wx:for="{{array1}}" wx:key="unique">
+                    <text class="left_item_title">{{item.title}}</text>
+                    <text class="left_item_number"> {{item.message}} </text>
+                    <text class="left_item_title">人数</text>
+                    <view class="left_item_view"></view>
+                </block>
+            </view>
+        </view>
+
+        <!--右边视图布局-->
+        <view class="flex-item2 bc_red">
+
+            <!--就业部-->
+            <view class="title_EmploymentDepartment">就业部</view>
+
+            <!--就业部列表布局-->
+            <view>
+                <block wx:for="{{array2}}" wx:key="unique">
+                    <text class="left_item_title">{{item.title}}</text>
+                    <text class="left_item_number"> {{item.message}} </text>
+                    <text class="left_item_title">人数</text>
+                    <view class="left_item_view"></view>
+                </block>
+            </view>
+        
+        </view>
+
+    </view>
+
+    <!--底部总人数视图布局-->
+    <view class="flex-item3">
+        <text>新生总123人数</text>
+    </view>
+
 </view>
+
+

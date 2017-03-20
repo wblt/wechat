@@ -1,6 +1,121 @@
 <!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log" wx:key="*this">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<view class="page">
+
+    <!--第一布局-->
+    <view class="contentView1">
+
+        <!--姓名区域-->
+        <view class="name_content">
+            <view class="name_title">姓名</view>
+
+            <view class="name_content">张三</view>
+
+        </view>
+
+        <!--性别区域-->
+        <view class="sex_content">
+
+            <view class="sex_title">性别</view>
+
+            <!--选择性别-->
+            <view class="boarding_item_box" bindtap="boarding_tap">
+
+                <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            
+                    <view class="boarding_item_title">男</view>
+                
+                </picker>
+
+                
+                <view class="icon"></view>
+            </view>
+
+        </view>
+
+        <!--是否寄宿区域-->
+        <view class="boarding_content">
+            <view>寄</view>
+
+            <!--是否寄宿-->
+            <view class="boarding_item_box" bindtap="boarding_tap">
+
+                <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            
+                    <view class="boarding_item_title">是</view>
+                
+                </picker>
+
+                <view class="icon"></view>
+            </view>
+            
+
+        </view>
+
+        <!--学号区域-->
+        <view class="studentID_content">
+            <view class="studentID_title">学号</view>
+
+            <view class="studentID_number">001</view>
+
+        </view>
+
+    </view>
+
+    <!--第二布局录取专业-->
+    <view class="contentView2">
+        <view class="professionalAdmission">录取专业</view>
+    </view>
+   
+    
+    <!--第三布局 高中部或则就业部-->
+    <view class="contentView3">
+
+        <!--高中部-->
+        <view class="selectHighSchool">
+
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            
+                <view>高中部</view>   
+                
+            </picker>
+            
+            <view class="icon"></view>
+        
+        </view>
+
+        <!--就业部-->
+        <view class="selectmajor">
+
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            
+                <view>就业部</view>   
+
+            </picker>
+
+            <view class="icon"></view>
+
+    
+        </view>
+    </view>
+
+    <!--第四布局 确定-->
+    <view class="contentView4" bindtap="contain_tap">
+
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        
+            <view class="centain">确定</view>
+
+        </picker>
+        
+    </view>
+
+    <!--第五布局 提示-->
+    <view class="contentView5">
+        <view class="hint">提示改专业人数已满，请选择其他专业</view>
+    </view>
+
 </view>
+
+
+
+
